@@ -33,7 +33,7 @@
 //#define BOARD_CITOH_CX6000    // C.ITOH CX-6000 HPGL plotter
 //#define BOARD_GENERIC_4AXIS
 //#define BOARD_GENERIC_8AXIS
-//#define BOARD_MY_MACHINE      // Add my_machine_map.h before enabling this!
+#define BOARD_ARDUINO_NANO_RP2040_CONNECT
 
 // Configuration
 // Uncomment to enable.

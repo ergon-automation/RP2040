@@ -171,6 +171,19 @@
         "rgb_out": 1,
         "wiznet": 5500
       }
+    },
+    {
+      "name": "Arduino Nano RP2040 Connect",
+      "symbol": "BOARD_ARDUINO_NANO_RP2040_CONNECT",
+      "URL": "https://store.arduino.cc/products/nano-rp2040-connect",
+      "MAP": "boards/arduino_nano_rp2040_connect_map.h",
+      "caps": {
+        "axes": 3,
+        "digital_in": 3,
+        "digital_out": 8,
+        "i2c": 1,
+        "pwm_out": 1
+      }
     },    
     {
       "name": "BTT SKR Pico 1.0",
