@@ -26,7 +26,7 @@ option(ADD_MQTT "Add MQTT client API" OFF)
 option(AddMyPlugin "Add my_plugin.c to build" OFF)
 
 # Select the correct board in VSCode, the following line will be updated accordingly
-set(PICO_BOARD pico CACHE STRING "Board type")
+set(PICO_BOARD arduino_nano_rp2040_connect CACHE STRING "Board type")
 
 include(pico_sdk_import.cmake)
 
@@ -112,6 +112,8 @@ target_compile_definitions(grblHAL PUBLIC RP_MCU=2040)
 if(PICO_SDK_VERSION_STRING VERSION_GREATER_EQUAL "2.1.1")
 target_compile_definitions(grblHAL PUBLIC PICO_USE_FASTEST_SUPPORTED_CLOCK=1)
 endif()
+elseif(PICO_BOARD STREQUAL "arduino_nano_rp2040_connect")
+target_compile_definitions(grblHAL PUBLIC RP_MCU=2040)
 else()
 target_compile_definitions(grblHAL PUBLIC RP_MCU=2350)
 endif()
